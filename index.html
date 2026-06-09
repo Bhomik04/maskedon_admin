@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>maskedon Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              admin: {
+                bg: '#0f1117',
+                card: '#1a1d27',
+                border: '#2a2d3e',
+                accent: '#6c63ff',
+                danger: '#ef4444',
+                success: '#22c55e',
+                warning: '#f59e0b',
+                muted: '#6b7280',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background: #0f1117; color: #e5e7eb; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #1a1d27; }
+      ::-webkit-scrollbar-thumb { background: #2a2d3e; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #6c63ff; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
